@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiana Elektronik - Spesialis AC 0.5 PK s/d 2 PK Sidoarjo | Gree, Daikin, Sharp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Styling */
+        :root {
+            --main-color: #28A745; /* Hijau Utama */
+            --main-color-dark: #1e7e34; 
+            --text-dark: #333;
+            --text-light: #fff;
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: var(--main-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px; 
+            margin-right: 15px;
+        }
+
+        .logo-container h1 {
+            color: var(--text-light);
+            font-size: 1.5em; 
+            font-weight: 700;
+            margin: 0;
+        }
+
+        header nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #d4edda; 
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            /* Placeholder background image for a cool AC/cooling effect */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1600x600/17a2b8/FFFFFF?text=Spesialis+Pendingin+Udara+AC') no-repeat center center/cover;
+            color: var(--text-light);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--main-color);
+            color: var(--text-light);
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--main-color-dark);
+            transform: translateY(-2px);
+        }
+
+        /* --- Konten Utama --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 40px 0 30px;
+            color: var(--main-color);
+        }
+
+        .filter-container { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+        .filter-container select, .filter-container input { padding: 8px 12px; border: 1px solid #ccc; border-radius: 4px; margin: 5px 0; }
+        .filter-container input[type="search"] { border-color: var(--main-color); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .product-card { background: var(--text-light); border: 1px solid #ddd; border-radius: 8px; overflow: hidden; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
+        .product-card img { width: 100%; height: 200px; object-fit: cover; border-bottom: 1px solid #ddd; }
+        .product-info { padding: 15px; }
+        .product-info h3 { font-size: 1.2em; margin-bottom: 5px; color: var(--main-color-dark); }
+        .product-info .price { font-size: 1.5em; color: var(--main-color); font-weight: 700; margin-bottom: 10px; }
+        .product-info .btn { width: 100%; font-size: 0.9em; }
+
+        /* --- Promo Banner --- */
+        .promo-banner {
+            background: var(--main-color);
+            color: var(--text-light);
+            padding: 40px 20px;
+            margin: 50px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .promo-banner h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .promo-banner p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .promo-banner .btn {
+            background: var(--text-light);
+            color: var(--main-color);
+        }
+
+        .promo-banner .btn:hover {
+            background: #eee;
+            color: var(--main-color);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--main-color-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        footer a {
+            color: #d4edda;
+            text-decoration: none;
+        }
+
+        /* --- Responsif --- */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 15px 20px; }
+            .logo-container { margin-bottom: 10px; }
+            .logo-container img { height: 40px; }
+            .logo-container h1 { font-size: 1.2em; }
+            header nav { width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap; }
+            header nav a { margin: 5px 10px; font-size: 0.9em; }
+            .hero h2 { font-size: 2em; }
+            .hero p { font-size: 1em; }
+            .filter-container { flex-direction: column; align-items: flex-start; }
+            .filter-container select, .filter-container input { width: 100%; margin: 5px 0; }
+            .product-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 2em; margin: 30px 0 20px; }
+            .promo-banner h2 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+      <div class="logo-container">
+        <img src="IMG-20250926-WA0112.jpg" alt="Logo Qiana Elektronik">
+        <h1>Qiana Elektronik</h1>
+      </div>
+      <nav>
+        <a href="#products">AC Terbaik</a>
+        <a href="#promo">Layanan</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Spesialis Pendingin Udara (AC) Terbaik di Sidoarjo</h2>
+        <p>Menyediakan AC 0.5 PK hingga 2 PK. Dapatkan produk original, harga transparan, dan instalasi terjamin dari 6 merek AC terbaik dunia.</p>
+        <a href="#products" class="btn">Lihat Penawaran AC Kami</a>
+    </section>
+
+    <section id="products" class="container">
+        <h2 class="section-title">Harga Spesial AC 0.5 PK (Garansi Resmi)</h2>
+
+        <div class="filter-container">
+            <select name="category" id="category-filter">
+                <option value="all">Semua Merek AC 0.5 PK</option>
+                <option value="gree">Gree</option>
+                <option value="midea">Midea</option>
+                <option value="changhong">Changhong</option>
+                <option value="daikin">Daikin</option>
+                <option value="polytron">Polytron</option>
+                <option value="sharp">Sharp</option>
+            </select>
+            <select name="sort" id="sort-filter">
+                <option value="newest">Terbaru</option>
+                <option value="price-asc">Harga Termurah</option>
+                <option value="price-desc">Harga Termahal</option>
+            </select>
+            <input type="search" placeholder="Cari tipe AC atau PK lain..." />
+        </div>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/28A745/FFFFFF?text=AC+Gree+0.5+PK" alt="AC Gree 0.5 PK">
+                <div class="product-info">
+                    <h3>Gree 0.5 PK Standard (Tahan Lama)</h3>
+                    <p class="price">Rp 3.050.000</p>
+                    <a href="https://wa.me/6281330330719?text=Halo%20Qiana%20Elektronik%2C%20saya%20tertarik%20dengan%20AC%20Gree%200.5%20PK%20Rp%203.050.000." target="_blank" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/28A745/FFFFFF?text=AC+Midea+0.5+PK" alt="AC Midea 0.5 PK">
+                <div class="product-info">
+                    <h3>Midea 0.5 PK (Paling Hemat Listrik)</h3>
+                    <p class="price">Rp 2.280.000</p>
+                    <a href="https://wa.me/6281330330719?text=Halo%20Qiana%20Elektronik%2C%20saya%20tertarik%20dengan%20AC%20Midea%200.5%20PK%20Rp%202.280.000." target="_blank" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/28A745/FFFFFF?text=AC+Changhong+0.5+PK" alt="AC Changhong 0.5 PK">
+                <div class="product-info">
+                    <h3>Changhong 0.5 PK (Harga Terbaik)</h3>
+                    <p class="price">Rp 2.200.000</p>
+                    <a href="https://wa.me/6281330330719?text=Halo%20Qiana%20Elektronik%2C%20saya%20tertarik%20dengan%20AC%20Changhong%200.5%20PK%20Rp%202.200.000." target="_blank" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/28A745/FFFFFF?text=AC+Daikin+0.5+PK" alt="AC Daikin 0.5 PK">
+                <div class="product-info">
+                    <h3>Daikin 0.5 PK (Kualitas Udara Terbaik)</h3>
+                    <p class="price">Rp 3.200.000</p>
+                    <a href="https://wa.me/6281330330719?text=Halo%20Qiana%20Elektronik%2C%20saya%20tertarik%20dengan%20AC%20Daikin%200.5%20PK%20Rp%203.200.000." target="_blank" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/28A745/FFFFFF?text=AC+Polytron+0.5+PK" alt="AC Polytron 0.5 PK">
+                <div class="product-info">
+                    <h3>Polytron 0.5 PK (Garansi Kompresor)</h3>
+                    <p class="price">Rp 2.300.000</p>
+                    <a href="https://wa.me/6281330330719?text=Halo%20Qiana%20Elektronik%2C%20saya%20tertarik%20dengan%20AC%20Polytron%200.5%20PK%20Rp%202.300.000." target="_blank" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="https://via.placeholder.com/300x200/28A745/FFFFFF?text=AC+Sharp+0.5+PK" alt="AC Sharp 0.5 PK">
+                <div class="product-info">
+                    <h3>Sharp 0.5 PK (Fitur Plasmacluster)</h3>
+                    <p class="price">Rp 2.650.000</p>
+                    <a href="https://wa.me/6281330330719?text=Halo%20Qiana%20Elektronik%2C%20saya%20tertarik%20dengan%20AC%20Sharp%200.5%20PK%20Rp%202.650.000." target="_blank" class="btn">Pesan Sekarang</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="promo" class="container">
+        <div class="promo-banner">
+            <h2>Bukan Sekadar Jual, Kami Berikan Garansi Instalasi Profesional</h2>
+            <p>Tim teknisi berpengalaman siap melayani pemasangan, perawatan, dan perbaikan AC Anda (0.5 PK - 2 PK). Jaminan dingin maksimal!</p>
+            <a href="https://wa.me/6281330330719" target="_blank" class="btn">Konsultasi Gratis via WhatsApp</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div style="text-align: center; font-size: 1.1em; line-height: 1.8;">
+            <p><strong>Alamat Toko & Bengkel:</strong> Jln. Imam Bonjol, Geluran, Taman, Sidoarjo, Jawa Timur</p>
+            <p><strong>Telepon Utama:</strong> <a href="tel:081330330719" style="color: var(--main-color); text-decoration: none;">0813 3033 0719</a></p>
+            <p><strong>WhatsApp (Fast Response):</strong> <a href="https://wa.me/6281330330719" target="_blank" style="color: var(--main-color); text-decoration: none;">0813 3033 0719</a></p>
+            <p><strong>Email Bisnis:</strong> <a href="mailto:qianaanugerahpratamacv@gmail.com" style="color: var(--main-color); text-decoration: none;">qianaanugerahpratamacv@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Qiana Elektronik (Spesialis AC). Alamat: Jln. Imam Bonjol, Geluran, Taman, Sidoarjo.</p>
+        <p><a href="#">Kebijakan Privasi</a>
