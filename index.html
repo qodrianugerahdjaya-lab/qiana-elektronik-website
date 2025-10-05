@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Qiana Elektronik | Toko AC Terpercaya di Sidoarjo</title>
+  <link rel="icon" href="logo.jpg">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="logo.jpg" alt="Qiana Elektronik Logo" class="logo">
+        <div class="brand-text">
+          <h1>Qiana Elektronik</h1>
+          <p class="tag">Toko AC & Elektronik — Sidoarjo</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#products">Produk</a>
+        <a href="#promo">Promo</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h2>AC Semua Merk & Kapasitas 0.5 PK — 5 PK</h2>
+        <p>Midea • Gree • Changhong • Daikin — Harga kompetitif, garansi resmi, layanan instalasi.</p>
+        <a class="cta" href="https://wa.me/6281330330719?text=Halo+Qiana+Elektronik,+saya+ingin+info+produk" target="_blank">Pesan via WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="search-area">
+      <input id="searchInput" placeholder="Cari produk, merk, atau kapasitas (mis. Midea, 1 PK)">
+      <div class="filters">
+        <select id="brandFilter">
+          <option value="all">Semua Merk</option>
+          <option value="Midea">Midea</option>
+          <option value="Gree">Gree</option>
+          <option value="Changhong">Changhong</option>
+          <option value="Daikin">Daikin</option>
+        </select>
+        <select id="sizeFilter">
+          <option value="all">Semua Kapasitas</option>
+          <option value="05">0.5 PK</option>
+          <option value="1">1 PK</option>
+          <option value="15">1.5 PK</option>
+          <option value="2">2 PK</option>
+          <option value="35">3.5 PK</option>
+          <option value="5">5 PK</option>
+        </select>
+        <select id="sortSelect">
+          <option value="default">Urutkan</option>
+          <option value="priceLow">Harga: Rendah → Tinggi</option>
+          <option value="priceHigh">Harga: Tinggi → Rendah</option>
+          <option value="promo">Promo Terbaik</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="products" class="products-grid" aria-label="Daftar produk">
+      <!-- Example product cards -->
+      <div class="product-card" data-name="AC Midea 1 PK" data-brand="Midea" data-size="1" data-price="3000000" data-promo="true">
+        <img src="https://images.unsplash.com/photo-1580910051078-719c4bc47b17?auto=format&fit=crop&w=800&q=60" alt="AC Midea 1 PK">
+        <h3>AC Midea 1 PK</h3>
+        <p class="desc">Hemat energi, dingin maksimal. Garansi resmi.</p>
+        <div class="meta"><span>Rp 3.000.000</span><span class="badge">Promo</span></div>
+        <button onclick="buyWhatsApp('AC Midea 1 PK')">Beli Sekarang</button>
+      </div>
+
+      <div class="product-card" data-name="AC Gree 1.5 PK" data-brand="Gree" data-size="15" data-price="4200000" data-promo="false">
+        <img src="https://images.unsplash.com/photo-1580910051078-719c4bc47b17?auto=format&fit=crop&w=800&q=60" alt="AC Gree 1.5 PK">
+        <h3>AC Gree 1.5 PK</h3>
+        <p class="desc">Dingin cepat, efisiensi listrik baik. Garansi resmi.</p>
+        <div class="meta"><span>Rp 4.200.000</span></div>
+        <button onclick="buyWhatsApp('AC Gree 1.5 PK')">Beli Sekarang</button>
+      </div>
+
+      <div class="product-card" data-name="AC Changhong 2 PK" data-brand="Changhong" data-size="2" data-price="5000000" data-promo="true">
+        <img src="https://images.unsplash.com/photo-1580910051078-719c4bc47b17?auto=format&fit=crop&w=800&q=60" alt="AC Changhong 2 PK">
+        <h3>AC Changhong 2 PK</h3>
+        <p class="desc">Kapasitas besar, dingin merata. Garansi resmi.</p>
+        <div class="meta"><span>Rp 5.000.000</span><span class="badge">Promo</span></div>
+        <button onclick="buyWhatsApp('AC Changhong 2 PK')">Beli Sekarang</button>
+      </div>
+
+      <div class="product-card" data-name="AC Daikin 3.5 PK" data-brand="Daikin" data-size="35" data-price="7500000" data-promo="true">
+        <img src="https://images.unsplash.com/photo-1580910051078-719c4bc47b17?auto=format&fit=crop&w=800&q=60" alt="AC Daikin 3.5 PK">
+        <h3>AC Daikin 3.5 PK</h3>
+        <p class="desc">Dingin maksimal, hemat listrik. Garansi resmi.</p>
+        <div class="meta"><span>Rp 7.500.000</span><span class="badge">Promo</span></div>
+        <button onclick="buyWhatsApp('AC Daikin 3.5 PK')">Beli Sekarang</button>
+      </div>
+
+    </section>
+
+    <section id="promo" class="promo">
+      <h2>Promo Spesial</h2>
+      <p>Diskon hingga 50% untuk produk pilihan + Cicilan 0% (syarat & ketentuan berlaku).</p>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Tentang Kami</h2>
+      <p>Qiana Elektronik adalah toko elektronik terkemuka di Sidoarjo yang mengkhususkan diri pada penjualan AC (Midea, Gree, Changhong, Daikin) dengan kapasitas mulai dari 0.5 PK hingga 5 PK. Kami menyediakan produk asli, garansi resmi, layanan instalasi profesional, dan dukungan purna jual yang responsif. Misi kami adalah memberikan solusi pendinginan berkualitas dengan harga bersaing dan layanan yang dapat dipercaya.</p>
+      <ul>
+        <li>Layanan: Penjualan, Pengiriman, Instalasi, Garansi</li>
+        <li>Jam Operasional: Senin–Sabtu, 09:00–18:00</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontak & Lokasi</h2>
+      <p><strong>Alamat:</strong> <a href="https://g.co/kgs/Tg8osM" target="_blank">Jl. Imam Bonjol No.22.A, Taman, Geluran, Kec. Taman, Kabupaten Sidoarjo, Jawa Timur 61257</a></p>
+      <p><strong>WhatsApp / Telp:</strong> <a href="https://wa.me/6281330330719" target="_blank">0813-3033-0719</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@qianaelectronic.com">info@qianaelectronic.com</a></p>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=Jl.+Imam+Bonjol+No.22.A,+Sidoarjo&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Qiana Elektronik — Semua hak cipta dilindungi.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
