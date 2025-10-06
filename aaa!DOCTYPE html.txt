@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiana Elektronik | Toko AC & Elektronik Sidoarjo</title>
+    <meta name="description" content="Qiana Elektronik – Toko AC & Elektronik Terpercaya di Sidoarjo. Promo AC terbaru dari Midea, Gree, Daikin, Sharp & Polytron.">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Qiana Elektronik</h1>
+        <p>Toko AC & Elektronik Terpercaya di Sidoarjo</p>
+    </header>
+
+    <main>
+        <section id="promo">
+            <h2>Promo Harga AC Terbaru 2025</h2>
+            <ul>
+                <li><strong>Midea</strong> MSFC E-05CRN2 (1/2 PK): Rp 2.280.000</li>
+                <li><strong>Gree</strong> GWC-05M00 (1/2 PK): Rp 2.990.000</li>
+                <li><strong>Daikin</strong> FTP-15AV (1/2 PK): Rp 3.150.000</li>
+                <li><strong>Changhong</strong> CSC-05NVB4 (1/2 PK): Rp 2.140.000</li>
+                <li><strong>Polytron</strong> PAC 05VH (1/2 PK): Rp 2.360.000</li>
+                <li><strong>Sharp</strong> AH-A5BEY (1/2 PK): Rp 2.650.000</li>
+            </ul>
+            <p><em>Harga dapat berubah sewaktu-waktu. Stok terbatas.</em></p>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak & Lokasi</h2>
+            <p>Alamat: Jl. Imam Bonjol No.22.A, Taman, Geluran, Kec. Taman, Kabupaten Sidoarjo, Jawa Timur 61257</p>
+            <p>WhatsApp / Telp: <a href="https://wa.me/081330330719">0813-3033-0719</a></p>
+            <p>Email: <a href="mailto:info@qianaelectronic.com">info@qianaelectronic.com</a></p>
+            <p>Jam Operasional: Senin–Sabtu, 09:00–18:00</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Qiana Elektronik. All rights reserved.</p>
+    </footer>
+</body>
+</html>

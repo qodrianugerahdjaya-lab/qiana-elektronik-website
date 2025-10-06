@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qodrianugerahdjaya-lab.github.io/qiana-elektronik-website/sitemap.xml
